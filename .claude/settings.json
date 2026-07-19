@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git rm *)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('package.json','utf8'\\)\\); console.log\\('package.json OK'\\)\")",
+      "Bash(npm install *)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(npx vitest *)",
+      "Bash(npx eslint *)",
+      "Bash(npx next *)"
+    ]
+  }
+}
