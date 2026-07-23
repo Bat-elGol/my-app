@@ -6,9 +6,9 @@
 - [x] Define AI Custom Instructions
 
 ## Phase 2: Core Layout & Navigation
-- [ ] Create basic Layout component
-- [ ] Create Navigation Bar (Header)
-- [ ] Create Footer
+- [x] Create basic Layout component
+- [x] Create Navigation Bar (Header)
+- [x] Create Footer
 
 ## Phase 3: Home Page
 - [ ] Hero section (Introduction)
