@@ -1,17 +1,17 @@
 // app/components/Footer.tsx
-import type { ReactElement } from "react";
-import Link from "next/link";
+import type { ReactElement } from 'react';
+import Link from 'next/link';
 
 const footerSections = {
   navigation: [
-    { href: "/", label: "Home" },
-    { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
+    { href: '/', label: 'Home' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/about', label: 'About' },
   ] as const,
   social: [
-    { href: "https://github.com", label: "GitHub" },
-    { href: "https://linkedin.com", label: "LinkedIn" },
-    { href: "https://twitter.com", label: "Twitter" },
+    { href: 'https://github.com', label: 'GitHub' },
+    { href: 'https://linkedin.com', label: 'LinkedIn' },
+    { href: 'https://twitter.com', label: 'Twitter' },
   ] as const,
 } as const;
 
@@ -84,7 +84,7 @@ export function Footer(): ReactElement {
             © {currentYear} My Portfolio. All rights reserved.
           </p>
           <p className="text-sm text-zinc-500">
-            Built with{" "}
+            Built with{' '}
             <a
               href="https://nextjs.org"
               target="_blank"
@@ -92,8 +92,8 @@ export function Footer(): ReactElement {
               className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50"
             >
               Next.js
-            </a>{" "}
-            and{" "}
+            </a>{' '}
+            and{' '}
             <a
               href="https://tailwindcss.com"
               target="_blank"

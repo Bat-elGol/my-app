@@ -1,6 +1,6 @@
 // app/components/NavigationBar.tsx
-import type { ReactElement } from "react";
-import Link from "next/link";
+import type { ReactElement } from 'react';
+import Link from 'next/link';
 
 type NavigationItem = {
   href: string;
@@ -8,9 +8,9 @@ type NavigationItem = {
 };
 
 const navigationItems: readonly NavigationItem[] = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/about", label: "About" },
+  { href: '/', label: 'Home' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/about', label: 'About' },
 ];
 
 export function NavigationBar(): ReactElement {

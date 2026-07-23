@@ -1,6 +1,6 @@
 // app/components/Layout.tsx
-import type { ReactElement, ReactNode } from "react";
-import { NavigationBar } from "./NavigationBar";
+import type { ReactElement, ReactNode } from 'react';
+import { NavigationBar } from './NavigationBar';
 
 type LayoutProps = {
   children: ReactNode;
@@ -9,10 +9,12 @@ type LayoutProps = {
 
 export function Layout({
   children,
-  className = "",
+  className = '',
 }: LayoutProps): ReactElement {
   return (
-    <div className={`min-h-screen bg-zinc-50 text-zinc-900 ${className}`.trim()}>
+    <div
+      className={`min-h-screen bg-zinc-50 text-zinc-900 ${className}`.trim()}
+    >
       <NavigationBar />
 
       <main
