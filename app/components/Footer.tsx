@@ -2,11 +2,6 @@
 import type { ReactElement } from "react";
 import Link from "next/link";
 
-type FooterLink = {
-  href: string;
-  label: string;
-};
-
 const footerSections = {
   navigation: [
     { href: "/", label: "Home" },
