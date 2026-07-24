@@ -25,4 +25,4 @@
 ## Phase 3: Home Page
 
 - [x] Hero section (Introduction)
-- [ ] Projects preview section
+- [x] Projects preview section
