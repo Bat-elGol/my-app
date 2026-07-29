@@ -1,6 +1,7 @@
 # Plan: Contact Section (Phase 4)
 
 ## Scope
+
 Add a Contact section to the homepage, following the same pattern as Hero and
 Projects: a self-contained section component rendered directly in `app/page.tsx`
 (no new route). Broken into three units of work:
@@ -13,6 +14,7 @@ Out of scope: a working form backend/API route, email delivery, spam protection.
 This is a static personal site with no server/API layer today.
 
 ## Context (gathered from existing code before writing this plan)
+
 - `app/components/HeroSection.tsx`, `ProjectsSection.tsx`, `Footer.tsx`,
   `NavigationBar.tsx` — all functional components typed `(): ReactElement`,
   no default export, named export matching the file name.
@@ -33,6 +35,7 @@ This is a static personal site with no server/API layer today.
   these are the commands to actually run before committing.
 
 ## Technical plan
+
 - New file `app/components/ContactSection.tsx`:
   - `<section>` with heading "Get In Touch" (or similar), matching
     `ProjectsSection`'s light background (`bg-white`) since it directly
@@ -49,6 +52,7 @@ This is a static personal site with no server/API layer today.
   checkbox, matching the existing Phase 1-3 format.
 
 ## Failure points / edge cases to warn about
+
 - **No real submit handler.** The form has no `action` and no client-side
   `onSubmit` that sends data anywhere (no API route exists in this project).
   Do not fake a "success" state that implies data was actually sent —
@@ -68,5 +72,6 @@ This is a static personal site with no server/API layer today.
   which only checks for a heading.
 
 ## Approval
+
 Plan reviewed and approved by the user (golzman1612@gmail.com) during a
 planning session on 2026-07-29, before any implementation began.
