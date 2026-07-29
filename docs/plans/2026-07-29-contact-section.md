@@ -73,5 +73,5 @@ This is a static personal site with no server/API layer today.
 
 ## Approval
 
-Plan reviewed and approved by the user (golzman1612@gmail.com) during a
-planning session on 2026-07-29, before any implementation began.
+Plan reviewed and approved by the project owner during a planning session
+on 2026-07-29, before any implementation began.

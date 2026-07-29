@@ -1,7 +1,16 @@
 // app/components/ContactSection.tsx
-import type { ReactElement } from 'react';
+'use client';
+
+import type { FormEvent, ReactElement } from 'react';
 
 export function ContactSection(): ReactElement {
+  function handleSubmit(event: FormEvent<HTMLFormElement>): void {
+    // No backend exists yet (see docs/plans/2026-07-29-contact-section.md) —
+    // prevent the native GET submission, which would otherwise leak the
+    // name/email/message into the URL, browser history, and referrers.
+    event.preventDefault();
+  }
+
   return (
     <section className="bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
       <div className="mx-auto max-w-2xl">
@@ -18,7 +27,11 @@ export function ContactSection(): ReactElement {
         </div>
 
         {/* Contact Form */}
-        <form className="space-y-6" aria-label="Contact form">
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-6"
+          aria-label="Contact form"
+        >
           <div>
             <label
               htmlFor="name"
