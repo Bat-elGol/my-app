@@ -26,3 +26,10 @@
 
 - [x] Hero section (Introduction)
 - [x] Projects preview section
+
+## Phase 4: Contact Section
+
+- [x] Plan documented in docs/plans/2026-07-29-contact-section.md
+- [x] Contact section (form with name, email, message)
+- [x] Wired into app/page.tsx
+- [x] Render test (app/**tests**/ContactSection.test.tsx)
