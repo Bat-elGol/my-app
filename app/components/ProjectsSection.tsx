@@ -39,14 +39,14 @@ const projects: readonly Project[] = [
 
 export function ProjectsSection(): ReactElement {
   return (
-    <section className="bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
+    <section className="bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-32 dark:bg-zinc-950">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-100">
             Featured Projects
           </h2>
-          <p className="mt-4 text-lg text-zinc-600">
+          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
             A selection of projects I{"'"}ve built to showcase my skills and
             experience.
           </p>
@@ -57,15 +57,15 @@ export function ProjectsSection(): ReactElement {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col rounded-lg border border-zinc-200 bg-white p-6 transition hover:shadow-lg focus-within:ring-2 focus-within:ring-blue-500"
+              className="flex flex-col rounded-lg border border-zinc-200 bg-white p-6 transition hover:shadow-lg focus-within:ring-2 focus-within:ring-blue-500 dark:border-zinc-800 dark:bg-zinc-900"
             >
               {/* Project Title */}
-              <h3 className="text-xl font-semibold text-zinc-900">
+              <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
                 {project.title}
               </h3>
 
               {/* Project Description */}
-              <p className="mt-3 flex-1 text-sm text-zinc-600">
+              <p className="mt-3 flex-1 text-sm text-zinc-600 dark:text-zinc-400">
                 {project.description}
               </p>
 
@@ -74,7 +74,7 @@ export function ProjectsSection(): ReactElement {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700"
+                    className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700 dark:bg-blue-950 dark:text-blue-300"
                   >
                     {tech}
                   </span>
@@ -84,7 +84,7 @@ export function ProjectsSection(): ReactElement {
               {/* View Project Link */}
               <Link
                 href={project.link}
-                className="mt-6 inline-flex items-center font-medium text-blue-600 transition hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="mt-6 inline-flex items-center font-medium text-blue-600 transition hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:text-blue-400 dark:hover:text-blue-300"
               >
                 View Project
                 <span className="ml-2">→</span>
@@ -94,18 +94,18 @@ export function ProjectsSection(): ReactElement {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 rounded-lg bg-zinc-50 px-6 py-12 text-center sm:px-12">
-          <h3 className="text-2xl font-bold text-zinc-900">
+        <div className="mt-16 rounded-lg bg-zinc-50 px-6 py-12 text-center sm:px-12 dark:bg-zinc-900">
+          <h3 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
             {'Want to see more?'}
           </h3>
-          <p className="mt-2 text-zinc-600">
+          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
             Check out my GitHub profile for more projects and contributions.
           </p>
           <Link
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center rounded-lg bg-zinc-900 px-6 py-3 font-semibold text-white transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2"
+            className="mt-6 inline-flex items-center rounded-lg bg-zinc-900 px-6 py-3 font-semibold text-white transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 dark:focus:ring-zinc-100"
           >
             Visit GitHub
             <span className="ml-2">↗</span>

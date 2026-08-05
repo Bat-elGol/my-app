@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function HeroSection(): ReactElement {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-white via-zinc-50 to-white px-4 py-20 sm:px-6 lg:px-8 lg:py-32 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
@@ -15,22 +15,22 @@ export function HeroSection(): ReactElement {
       <div className="relative mx-auto max-w-4xl">
         <div className="space-y-8 text-center">
           {/* Eyebrow text */}
-          <div className="inline-flex items-center rounded-full bg-zinc-800 px-4 py-1.5">
-            <span className="text-sm font-medium text-blue-400">
+          <div className="inline-flex items-center rounded-full bg-zinc-100 px-4 py-1.5 dark:bg-zinc-800">
+            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
               Welcome to my portfolio
             </span>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl dark:text-white">
             Building Digital Experiences
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">
               That Inspire
             </span>
           </h1>
 
           {/* Description */}
-          <p className="mx-auto max-w-2xl text-lg text-zinc-400 sm:text-xl">
+          <p className="mx-auto max-w-2xl text-lg text-zinc-600 sm:text-xl dark:text-zinc-400">
             {
               "I'm a passionate web developer specializing in creating beautiful, functional, and accessible web applications. Let's bring your ideas to life."
             }
@@ -40,7 +40,7 @@ export function HeroSection(): ReactElement {
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/projects"
-              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-zinc-900"
             >
               View My Projects
               <span className="ml-2">→</span>
@@ -48,35 +48,35 @@ export function HeroSection(): ReactElement {
 
             <Link
               href="/about"
-              className="inline-flex items-center justify-center rounded-lg border border-zinc-700 px-8 py-3 font-semibold text-zinc-100 transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+              className="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:focus:ring-offset-zinc-900"
             >
               Learn More
             </Link>
           </div>
 
           {/* Stats section */}
-          <div className="grid grid-cols-3 gap-4 border-t border-zinc-700 pt-12 sm:gap-8">
+          <div className="grid grid-cols-3 gap-4 border-t border-zinc-200 pt-12 sm:gap-8 dark:border-zinc-700">
             <div>
-              <div className="text-2xl font-bold text-white sm:text-3xl">
+              <div className="text-2xl font-bold text-zinc-900 sm:text-3xl dark:text-white">
                 50+
               </div>
-              <p className="mt-1 text-sm text-zinc-400 sm:text-base">
+              <p className="mt-1 text-sm text-zinc-600 sm:text-base dark:text-zinc-400">
                 Projects Completed
               </p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-white sm:text-3xl">
+              <div className="text-2xl font-bold text-zinc-900 sm:text-3xl dark:text-white">
                 5+
               </div>
-              <p className="mt-1 text-sm text-zinc-400 sm:text-base">
+              <p className="mt-1 text-sm text-zinc-600 sm:text-base dark:text-zinc-400">
                 Years Experience
               </p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-white sm:text-3xl">
+              <div className="text-2xl font-bold text-zinc-900 sm:text-3xl dark:text-white">
                 100%
               </div>
-              <p className="mt-1 text-sm text-zinc-400 sm:text-base">
+              <p className="mt-1 text-sm text-zinc-600 sm:text-base dark:text-zinc-400">
                 Client Satisfaction
               </p>
             </div>

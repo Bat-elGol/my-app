@@ -33,3 +33,10 @@
 - [x] Contact section (form with name, email, message)
 - [x] Wired into app/page.tsx
 - [x] Render test (app/**tests**/ContactSection.test.tsx)
+
+## Phase 5: Dark Mode
+
+- [x] Plan documented in docs/plans/2026-07-29-dark-mode.md
+- [x] Tailwind v4 `@custom-variant dark` + `next-themes` ThemeProvider
+- [x] ThemeToggle in NavigationBar, persists via localStorage
+- [x] dark: variants across Hero, Projects, Contact, Footer, Nav, Layout
