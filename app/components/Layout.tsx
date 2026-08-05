@@ -13,7 +13,7 @@ export function Layout({
 }: LayoutProps): ReactElement {
   return (
     <div
-      className={`min-h-screen bg-zinc-50 text-zinc-900 ${className}`.trim()}
+      className={`min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 ${className}`.trim()}
     >
       <NavigationBar />
 

@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 import { Layout } from '@/app/components/Layout';
 import './globals.css';
 
@@ -29,9 +30,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full">
-        <Layout>{children}</Layout>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <Layout>{children}</Layout>
+        </ThemeProvider>
       </body>
     </html>
   );

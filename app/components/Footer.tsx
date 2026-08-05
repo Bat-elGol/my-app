@@ -19,16 +19,16 @@ export function Footer(): ReactElement {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-zinc-200 bg-zinc-50">
+    <footer className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* About Section */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-900">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-900 dark:text-zinc-100">
               About
             </h3>
-            <p className="text-sm text-zinc-600">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
               A personal portfolio showcasing projects and expertise in web
               development.
             </p>
@@ -36,7 +36,7 @@ export function Footer(): ReactElement {
 
           {/* Navigation Links */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-900">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-900 dark:text-zinc-100">
               Navigation
             </h3>
             <ul className="space-y-2">
@@ -44,7 +44,7 @@ export function Footer(): ReactElement {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50"
+                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
                   >
                     {item.label}
                   </Link>
@@ -55,7 +55,7 @@ export function Footer(): ReactElement {
 
           {/* Social Links */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-900">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-900 dark:text-zinc-100">
               Social
             </h3>
             <ul className="space-y-2">
@@ -65,7 +65,7 @@ export function Footer(): ReactElement {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50"
+                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
                   >
                     {item.label}
                   </a>
@@ -76,20 +76,20 @@ export function Footer(): ReactElement {
         </div>
 
         {/* Divider */}
-        <div className="my-8 border-t border-zinc-200" />
+        <div className="my-8 border-t border-zinc-200 dark:border-zinc-800" />
 
         {/* Bottom Section */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-sm text-zinc-600">
+          <p className="text-sm text-zinc-600 dark:text-zinc-400">
             © {currentYear} My Portfolio. All rights reserved.
           </p>
-          <p className="text-sm text-zinc-500">
+          <p className="text-sm text-zinc-500 dark:text-zinc-500">
             Built with{' '}
             <a
               href="https://nextjs.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50"
+              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
             >
               Next.js
             </a>{' '}
@@ -98,7 +98,7 @@ export function Footer(): ReactElement {
               href="https://tailwindcss.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50"
+              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
             >
               Tailwind CSS
             </a>
