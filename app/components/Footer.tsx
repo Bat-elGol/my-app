@@ -44,7 +44,7 @@ export function Footer(): ReactElement {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
+                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus:ring-zinc-100 dark:focus:ring-offset-zinc-900"
                   >
                     {item.label}
                   </Link>
@@ -65,7 +65,7 @@ export function Footer(): ReactElement {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
+                    className="text-sm text-zinc-600 transition hover:text-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus:ring-zinc-100 dark:focus:ring-offset-zinc-900"
                   >
                     {item.label}
                   </a>
@@ -89,7 +89,7 @@ export function Footer(): ReactElement {
               href="https://nextjs.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
+              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:hover:text-zinc-100 dark:focus:ring-zinc-100 dark:focus:ring-offset-zinc-900"
             >
               Next.js
             </a>{' '}
@@ -98,7 +98,7 @@ export function Footer(): ReactElement {
               href="https://tailwindcss.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:hover:text-zinc-100 dark:focus:ring-offset-zinc-900"
+              className="transition hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 focus:ring-offset-zinc-50 dark:hover:text-zinc-100 dark:focus:ring-zinc-100 dark:focus:ring-offset-zinc-900"
             >
               Tailwind CSS
             </a>
